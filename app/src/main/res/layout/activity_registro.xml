@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f3ee"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f3ee"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="#000000"
+            android:foregroundTint="#070707"
+            android:hint="Nombre"
+            android:shadowColor="#000000"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#050505"
+            android:textColorLink="#090909" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo Electrónico"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#0B0B0B"
+            android:textColorLink="#020202" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#090909"
+            android:textColorLink="#090909" />
+
+        <Button
+            android:id="@+id/buttonRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E08ED4"
+            android:text="Registrar" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
