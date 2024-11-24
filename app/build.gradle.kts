@@ -26,6 +26,11 @@ android {
             )
         }
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -49,4 +54,14 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("com.google.android.gms:play-services-base:18.0.1")
+    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.android.gms:play-services-base:18.0.1")
+    // Google Maps and Location Services dependencies
+    implementation("com.google.android.gms:play-services-maps:18.1.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+
+    // Optional: Places API, if you need location suggestions or details about specific places
+    implementation("com.google.android.libraries.places:places:3.2.0")
 }

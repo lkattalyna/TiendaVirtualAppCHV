@@ -58,4 +58,7 @@
             android:backgroundTint="#E08ED4"
             android:text="Registrar" />
     </LinearLayout>
+
+   />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,20 +13,28 @@ class Inicio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_inicio)
+
+        // Ajusta los márgenes del sistema en la vista principal
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-
         }
 
-            val buttonMujer = findViewById<Button>(R.id.button5)
-
-            // Listener para el botón MUJER
-            buttonMujer.setOnClickListener {
-                // Navegar a MainActivity
-                val intent = Intent(this, MujerActivity::class.java)
-                startActivity(intent)
+        // Botón para ir a MujerActivity
+        val buttonMujer = findViewById<Button>(R.id.button5)
+        buttonMujer.setOnClickListener {
+            val intent = Intent(this, MujerActivity::class.java)
+            startActivity(intent)
         }
+
+        // Botón para ir a TiendaActivity
+        val button6 = findViewById<Button>(R.id.button6)
+        button6.setOnClickListener {
+            val intent = Intent(this, TiendaActivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }

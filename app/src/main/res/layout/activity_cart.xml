@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CartActivity">
+    tools:context=".Inicio">
 
     <!-- Título del carrito -->
     <TextView
@@ -57,6 +57,7 @@
             android:text="Total: $0"
             android:textSize="18sp"
             android:textStyle="bold" />
+
 
         <Button
             android:id="@+id/btnCheckout"
